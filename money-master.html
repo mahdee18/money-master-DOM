@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-center mt-10 text-3xl text-blue-400">Revenue Calculator!</h1>
+  <main class="w-11/12 mx-auto mt-5 grid grid-cols-2 gap-4 ">
+    <div class="">
+        <img src="./images/money.png" alt="">
+    </div>
+    <div class="bg-blue-300 text-center h-100">
+        <h3 class="text-2xl font-semibold py-2 mt-10 mb-3">Income</h3>
+        <label for="" class="font-semibold">Income:</label> <input type="text" class="mr-2 py-2 px-2 rounded text-xl" id="income">
+
+        <h3 class="text-2xl font-semibold py-2 mt-8 mb-2">Expenses</h3>
+        <label for="" class="font-semibold">Food:</label> <input class="ml-2 py-2 px-2 rounded text-xl" type="text" id="food"><br>
+        <br>
+        <label for="" class="font-semibold">Rent:</label> <input class="ml-2 py-2 px-2 rounded text-xl" type="text" id="rent"><br>
+        <br>
+        <label for="" class="font-semibold">Cloths:</label> <input class="mr-1 py-2 px-2 rounded text-xl" type="text" id="cloths">
+        <br>
+        <button class="mt-3 bg-amber-600 hover:bg-blue-800 text-white px-10 py-3 rounded-lg font-semibold ml-10" id="calculate-btn">Calculate</button>
+
+        <h3 class="mt-6 mb-3 text-2xl">Total Expenses : $ <span id="expenses">00</span></h3>
+        <h3 class="my-3 text-2xl">Current Balance : $ <span id="current-balance">00</span></h3>
+
+        <label for="" class="font-semibold">Save: </label> <input type="text" id="save-percent" class="w-1/12 py-2 px-2 rounded">  %  <button id="save-btn" class="mt-3 bg-amber-600 hover:bg-blue-800 text-white px-10 py-2 rounded-lg font-semibold">Save</button>
+
+        <h3 class="mt-5 mb-3 text-2xl">Saving Amount : $ <span id="savings-display">00</span></h3>
+        <h3 class="my-3 text-2xl pb-12">Remaining Balance : $ <span id="remaining-balance">00</span></h3>
+    </div>
+  </main>
+  <script src="./js/money-master.js"></script>
+  <script src="./js/js.js"></script>
+</body>
+</html>
